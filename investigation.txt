@@ -1,0 +1,22 @@
+cat > investigation.txt << EOF
+Date: 09/03/2026
+Analyst: Prashant
+
+Attacker IP: 185.220.101.45
+Failed Logins: 5
+Successful Login: Mar 09 10:06
+Post Attack Actions:
+- New user created: hacker123
+- Sudo command executed
+
+MITRE ATT&CK:
+- T1110 Brute Force
+- T1136 Create Account
+- T1548 Privilege Escalation
+
+Recommendation:
+- Block IP 185.220.101.45
+- Delete user hacker123
+- Reset root password
+- Enable 2FA
+EOF
